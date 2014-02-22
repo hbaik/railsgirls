@@ -1,22 +1,24 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Mini Posts</title>
-  <%= stylesheet_link_tag    "application", media: "all" %>
+  <title>Hani APP</title>
+  <%= stylesheet_link_tag    "bootstrap", media: "all" %>
   <%= javascript_include_tag "application" %>
   <%= csrf_meta_tags %>
 </head>
 <body>
 
-<div class="navigation-bar">
-  <ul>
+<div class="navbar navbar-default">
+  <ul class="nav navbar-nav">
     <li>
       <%= link_to "List All Users", users_path %>
     </li>
     <li>
       <%= link_to "Make New User", new_user_path %>
     </li>
-
+    <li>
+      <%= link_to "Make New Post", new_post_path %>
+    </li>
   </ul>
 </div>
 

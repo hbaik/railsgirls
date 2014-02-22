@@ -7,4 +7,19 @@
     <%= f.text_field :name %>
   </div>
 
+  <div class="form-section">
+    <%= f.label :email %>
+    <%= f.text_field :email %>
+  </div>
+
+  <div class="form-section">
+    <%= f.file_field :image %>
+  </div>
+
+  <div class="form-section">
+    <%= f.submit 'Create User', :class => "btn btn-danger" %>
+  </div>
+
+  
+
 <% end %>
